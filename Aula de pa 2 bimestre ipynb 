@@ -1,0 +1,254 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOAVPa3fIxqL+X92PpfoS+v",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ademar168/PA-1C-grupo-A/blob/main/Aula%20de%20pa%202%20bimestre%20ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8299vjDJdrdl",
+        "outputId": "45761cb3-a24b-48b6-dcd0-7dfea274bf91"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "olá mundo!\n",
+            "olá mundo!\n",
+            "olá mundo!\n",
+            "olá mundo!\n",
+            "olá mundo!\n"
+          ]
+        }
+      ],
+      "source": [
+        "# iterações e laços de repetição\n",
+        "\n",
+        "for i in range (5):\n",
+        " print (\"olá mundo!\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range (6):\n",
+        " print (i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yen7vrcHgbvi",
+        "outputId": "fcd9e764-67a1-487f-bd89-448a250ce831"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range (1, 6):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wmT3kD4dhTCx",
+        "outputId": "38395586-6dc0-4687-8123-ef159884b248"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que imprime de 5 até 0\n",
+        "\n",
+        "for i in range (7):\n",
+        "  print (6-i)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CnjPKkXwhmIL",
+        "outputId": "cc36d73f-6080-41ba-cd46-8d8b9a772597"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que imprime os números pares de 0 a 10\n",
+        "\n",
+        "for i in range (11):\n",
+        "\n",
+        "  if i % 2 == 0:\n",
+        "    print (i)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9j9iDySujIBs",
+        "outputId": "0622fc95-666b-4426-cd79-00a9fedaf2bc"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# imprime números impares\n",
+        "\n",
+        "for i in range (0,11,2):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jtBbgWcjk4Yd",
+        "outputId": "b459ed0f-2136-4d30-ff7e-e1b6fa216ec8"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que o usuário digita um número de 1 a 10 e imprime a tabuada\n",
+        "número = int (input(\"digite um número de 1 a 10:\"))\n",
+        "\n",
+        "for i in range (1,11):\n",
+        "  print (f\"{número} x {i} = {número * i}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CwymoCxalLpk",
+        "outputId": "81258d2e-8e28-40dc-d7bb-e7cdd9569e04"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número de 1 a 10: 8\n",
+            "8 x 1 = 8\n",
+            "8 x 2 = 16\n",
+            "8 x 3 = 24\n",
+            "8 x 4 = 32\n",
+            "8 x 5 = 40\n",
+            "8 x 6 = 48\n",
+            "8 x 7 = 56\n",
+            "8 x 8 = 64\n",
+            "8 x 9 = 72\n",
+            "8 x 10 = 80\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
