@@ -1,0 +1,863 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPQ7VR7E/sn9yPxkm6uDhLq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ademar168/PA-1C-grupo-A/blob/main/Aula%20de%20pa%202%20bimestre%20ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8299vjDJdrdl",
+        "outputId": "45761cb3-a24b-48b6-dcd0-7dfea274bf91"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "olá mundo!\n",
+            "olá mundo!\n",
+            "olá mundo!\n",
+            "olá mundo!\n",
+            "olá mundo!\n"
+          ]
+        }
+      ],
+      "source": [
+        "# iterações e laços de repetição\n",
+        "\n",
+        "for i in range (5):\n",
+        " print (\"olá mundo!\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range (6):\n",
+        " print (i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yen7vrcHgbvi",
+        "outputId": "fcd9e764-67a1-487f-bd89-448a250ce831"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range (1, 6):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wmT3kD4dhTCx",
+        "outputId": "38395586-6dc0-4687-8123-ef159884b248"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que imprime de 5 até 0\n",
+        "\n",
+        "for i in range (7):\n",
+        "  print (6-i)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CnjPKkXwhmIL",
+        "outputId": "cc36d73f-6080-41ba-cd46-8d8b9a772597"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que imprime os números pares de 0 a 10\n",
+        "\n",
+        "for i in range (11):\n",
+        "\n",
+        "  if i % 2 == 0:\n",
+        "    print (i)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9j9iDySujIBs",
+        "outputId": "0622fc95-666b-4426-cd79-00a9fedaf2bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# imprime números impares\n",
+        "\n",
+        "for i in range (0,10,3):\n",
+        "\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jtBbgWcjk4Yd",
+        "outputId": "07d90157-c315-4712-a9cb-4b5afa30288e"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "3\n",
+            "6\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que o usuário digita um número de 1 a 10 e imprime a tabuada\n",
+        "número = int (input(\"digite um número de 1 a 10:\"))\n",
+        "\n",
+        "for i in range (1,11):\n",
+        "  print (f\"{número} x {i} = {número * i}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CwymoCxalLpk",
+        "outputId": "81258d2e-8e28-40dc-d7bb-e7cdd9569e04"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número de 1 a 10: 8\n",
+            "8 x 1 = 8\n",
+            "8 x 2 = 16\n",
+            "8 x 3 = 24\n",
+            "8 x 4 = 32\n",
+            "8 x 5 = 40\n",
+            "8 x 6 = 48\n",
+            "8 x 7 = 56\n",
+            "8 x 8 = 64\n",
+            "8 x 9 = 72\n",
+            "8 x 10 = 80\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que o usuário digita um número e o programa imprime de 0 até o número;\n",
+        "\n",
+        "nm = int (input(\"digite um número:\"))\n",
+        "num = nm + 1\n",
+        "for i in range (0,num):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rJzM_7HWgqnq",
+        "outputId": "251f893c-fb0b-423e-e5e5-710ac7069413"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número:20\n",
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que o usuário digita um número e o programa imprime em ordem decrescente\n",
+        "# até o zero\n",
+        "\n",
+        "numero = int (input(\"digite um número\"))\n",
+        "\n",
+        "for i in range(numero,-1,-1):\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8dhwkMeBhbQ7",
+        "outputId": "84183031-485e-44a0-ab9e-d8cc2ee2291e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número 12\n",
+            "12\n",
+            "11\n",
+            "10\n",
+            "9\n",
+            "8\n",
+            "7\n",
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# pede um número ao usuário\n",
+        "numero = int(input(\"Digite um número: \"))\n",
+        "\n",
+        "# mostra os números pares até esse número\n",
+        "print(\"Números pares até\", numero, \":\")\n",
+        "\n",
+        "for i in range(0, numero + 1, 2):\n",
+        "    print(i)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dnoYurNmh7pK",
+        "outputId": "d01ac417-154a-4e16-c1f0-9fe831c6e79f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 30\n",
+            "Números pares até 30 :\n",
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n",
+            "12\n",
+            "14\n",
+            "16\n",
+            "18\n",
+            "20\n",
+            "22\n",
+            "24\n",
+            "26\n",
+            "28\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# peça um número e calcule a soma de 1 até o número\n",
+        "\n",
+        "numero = int(input(\"Digite um número: \"))\n",
+        "\n",
+        "soma = 0\n",
+        "for i in range(1, numero + 1):\n",
+        "    soma += i\n",
+        "\n",
+        "print(\"A soma de 1 até\", numero, \"é:\", soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g3JEMdNVlaS6",
+        "outputId": "194554f9-1c78-4396-8b30-2a1f33ce7b7c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 15\n",
+            "A soma de 1 até 15 é: 120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# peça uma palavra e conte as letras: ex: python - a palavra tem 06 letras\n",
+        "palavra = input(\"Digite uma palavra: \")\n",
+        "\n",
+        "quantidade = len(palavra)\n",
+        "\n",
+        "print(f\"A palavra '{palavra}' tem {quantidade:02d} letras\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SyJO5DHBlndz",
+        "outputId": "e728f442-ee03-4869-e4db-867072c6b5f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma palavra:  cachorro\n",
+            "A palavra ' cachorro' tem 09 letras\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# peça uma palavra e conte as vogais\n",
+        "\n",
+        "vogais = \"aeiou\"\n",
+        "contador = 0\n",
+        "\n",
+        "for letra in palavra:\n",
+        "    if letra in vogais:\n",
+        "        contador += 1\n",
+        "\n",
+        "print(f\"A palavra '{palavra}' tem {contador} vogais\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g7rsQ4yRl_HC",
+        "outputId": "32271702-bd2c-4991-bc61-02a627d4abca"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A palavra ' cachorro' tem 3 vogais\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# peça ao usuário para digitar 05 números e informe o valor\n",
+        "\n",
+        "numeros = []\n",
+        "\n",
+        "for i in range(5):\n",
+        "    n = float(input(f\"Digite o {i+1}º número: \"))\n",
+        "    numeros.append(n)\n",
+        "\n",
+        "soma = sum(numeros)\n",
+        "\n",
+        "print(\"A soma dos números é:\", soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V72ZrE8jmMHx",
+        "outputId": "01eda437-7fcf-4200-f055-c0157c958538"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o 1º número:  8\n",
+            "Digite o 2º número:  7\n",
+            "Digite o 3º número:  6\n",
+            "Digite o 4º número:  5\n",
+            "Digite o 5º número:  4\n",
+            "A soma dos números é: 30.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o usuário digita um número de 1 a 10 e o programa imprime a tabuada do número digitado.\n",
+        "\n",
+        "numero = int (input(\"digite um número de 1 a 10\"))\n",
+        "\n",
+        "for i in range (1,11):\n",
+        "\n",
+        "  print (f\"{numero} x {i} = {numero * i}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "evt-usQboUgl",
+        "outputId": "fba48e98-2275-4f76-fe8c-9929003b7715"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número de 1 a 10 2\n",
+            "2 x 1 = 2\n",
+            "2 x 2 = 4\n",
+            "2 x 3 = 6\n",
+            "2 x 4 = 8\n",
+            "2 x 5 = 10\n",
+            "2 x 6 = 12\n",
+            "2 x 7 = 14\n",
+            "2 x 8 = 16\n",
+            "2 x 9 = 18\n",
+            "2 x 10 = 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o usuário digita um número e o programa imprime até o número digitado.\n",
+        "\n",
+        "numero = int (input(\"digite um número\"))\n",
+        "\n",
+        "for i in range (11):\n",
+        "\n",
+        " print(f\"{numero}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8mDj5WMso87e",
+        "outputId": "926f51aa-4d73-4c7e-c522-3ab4a2e9a1a7"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número 8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n",
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o usuário digita um número e o programa imprime o número digitado até o zero (contagem regressiva)\n",
+        "\n",
+        "\n",
+        "numero = int (input(\"digite um número\"))\n",
+        "\n",
+        "for i in range(numero,-1,-1):\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "foDmX7o5pib0",
+        "outputId": "283074a6-508f-4ece-84b7-aef8d693045a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número 10\n",
+            "10\n",
+            "9\n",
+            "8\n",
+            "7\n",
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o usuário digita um número e o programa imprime os números pares\n",
+        "for i in range (11):\n",
+        "\n",
+        "  if i % 2 == 0:\n",
+        "    print (i)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bXyCCT7yqCfD",
+        "outputId": "6306bea8-c672-4ba2-8450-9dd9767a437f"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o suário digita um número e o programa imprime os números impares\n",
+        "\n",
+        "for i in range (11):\n",
+        "\n",
+        "  if i % 3 == 0:\n",
+        "    print (i)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NKk1g1PUqRu1",
+        "outputId": "91a6ed7b-73e5-4d16-8555-fefe76c6a882"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "3\n",
+            "6\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o usuario digita um numero e o programa some os numeros ate o numero digitado\n",
+        "\n",
+        "numero = int(input(\"Digite um número: \"))\n",
+        "\n",
+        "soma = 0\n",
+        "for i in range(1, numero + 1):\n",
+        "    soma += i\n",
+        "\n",
+        "print(f\"A soma dos números até {numero} é: {soma}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n_2AgRvoq1wc",
+        "outputId": "4006c4cc-e5e0-4176-aee8-f7a90a96f33d"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 2\n",
+            "A soma dos números até 2 é: 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# escrever um programa que o usuario digita 04 numeros e o programa imprime o valor\n",
+        "\n",
+        "palavra = input(\"Digite uma palavra: \")\n",
+        "quantidade_letras = len(palavra)\n",
+        "print(f\"A palavra '{palavra}' tem {quantidade_letras} letras.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qA6eMJH5rQly",
+        "outputId": "b29a8f26-d7be-4476-a118-8bf3a312df34"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma palavra:  casa\n",
+            "A palavra ' casa' tem 5 letras.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palavra = input(\"Digite uma palavra: \")\n",
+        "palavra_invertida = palavra[::-1]\n",
+        "print(f\"A palavra invertida é: {palavra_invertida}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-Ai705dzrn9F",
+        "outputId": "2d2307b3-a47e-427f-a96b-797d4ee961be"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma palavra:  papagaio\n",
+            "A palavra invertida é: oiagapap \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# pirâmide numérica simétrica\n",
+        "\n",
+        "# Faça um programa que receba um número N e imprima uma pirâmide perfeitamente centralizada.\n",
+        "\n",
+        "# Exemplo para N = 5\n",
+        "#         1\n",
+        "#       2 1 2\n",
+        "#      3 2 1 3\n",
+        "#   4 3 2 1 2 3 4\n",
+        "#  5 4 3 2 1 3 4 5\n",
+        "\n",
+        "def print_numeric_pyramid(N):\n",
+        "    # Determina a largura máxima da linha para centralização.\n",
+        "    # A linha mais longa é a última, e seus elementos são N ... 1 ... N.\n",
+        "    # Criamos uma string com a última linha para obter o comprimento correto.\n",
+        "    ultima_linha_elementos = [str(x) for x in range(N, 0, -1)] + [str(x) for x in range(2, N + 1)]\n",
+        "    largura_maxima = len(' '.join(ultima_linha_elementos))\n",
+        "\n",
+        "    for i in range(1, N + 1):\n",
+        "        # Constrói a parte esquerda da linha (de i até 1)\n",
+        "        parte_esquerda = ' '.join(map(str, range(i, 0, -1)))\n",
+        "\n",
+        "        # Constrói a parte direita da linha (de 2 até i, se i > 1)\n",
+        "        parte_direita = ''\n",
+        "        if i > 1:\n",
+        "            parte_direita = ' '.join(map(str, range(2, i + 1)))\n",
+        "\n",
+        "        # Combina as partes esquerda e direita para formar a linha completa\n",
+        "        if parte_direita:\n",
+        "            linha_completa = f\"{parte_esquerda} {parte_direita}\"\n",
+        "        else:\n",
+        "            linha_completa = parte_esquerda\n",
+        "\n",
+        "        # Centraliza a linha completa usando a largura_maxima calculada\n",
+        "        print(linha_completa.center(largura_maxima))\n",
+        "\n",
+        "# Solicita o número N ao usuário e garante que seja um número inteiro positivo\n",
+        "while True:\n",
+        "    try:\n",
+        "        N = int(input(\"Digite um número inteiro positivo para N (ex: 5): \"))\n",
+        "        if N > 0:\n",
+        "            break\n",
+        "        else:\n",
+        "            print(\"Por favor, digite um número maior que zero.\")\n",
+        "    except ValueError:\n",
+        "        print(\"Entrada inválida. Por favor, digite um número inteiro.\")\n",
+        "\n",
+        "# Imprime a pirâmide\n",
+        "print_numeric_pyramid(N)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ibagM8ULv9AC",
+        "outputId": "75dcb32f-2d9c-4e88-a89a-c9bf07edd344"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro positivo para N (ex: 5): 2\n",
+            "  1  \n",
+            "2 1 2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
